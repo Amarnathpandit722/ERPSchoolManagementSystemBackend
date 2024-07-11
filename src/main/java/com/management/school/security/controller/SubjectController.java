@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.management.school.security.dto.SubjectDto;
 import com.management.school.security.dto.request.subject.CreateSubjectRequest;
 import com.management.school.security.dto.request.subject.UpdateSubjectRequest;
-import com.management.school.security.helper.SubjectNotFoundException;
+import com.management.school.security.exception.SubjectNotFoundException;
 import com.management.school.security.service.SubjectService;
 
 import io.swagger.v3.oas.annotations.tags.Tag;

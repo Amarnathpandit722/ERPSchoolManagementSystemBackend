@@ -1,6 +1,5 @@
 package com.management.school.security.service.impl;
 
-import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -12,8 +11,8 @@ import com.management.school.security.dto.SubjectDto;
 import com.management.school.security.dto.converter.SubjectDtoConverter;
 import com.management.school.security.dto.request.subject.CreateSubjectRequest;
 import com.management.school.security.dto.request.subject.UpdateSubjectRequest;
+import com.management.school.security.exception.SubjectNotFoundException;
 import com.management.school.security.helper.GenerateSubjectName;
-import com.management.school.security.helper.SubjectNotFoundException;
 import com.management.school.security.model.Classroom;
 import com.management.school.security.model.Subject;
 import com.management.school.security.model.Teacher;

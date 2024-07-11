@@ -112,4 +112,41 @@ public class ValidationMessage {
 	        public static final String TEACHER_ID_MUST_NOT_NULL = "Teacher ID must not be null";
 	        public static final String TEACHER_ID_MUST_NOT_EMPTY = "Teacher ID must not be empty";
 	    }
+	    public static class Assignment {
+	        public static final String TITLE_NOT_EMPTY = "Assignment title cannot be empty";
+	        public static final String TITLE_NOT_NULL = "Assignment title cannot be null";
+	        public static final String DESCRIPTION_NOT_EMPTY = "Assignment description cannot be empty";
+	        public static final String DESCRIPTION_NOT_NULL = "Assignment description cannot be null";
+	        public static final String DEADLINE_DATE_NOT_EMPTY = "Assignment deadline date cannot be empty";
+	        public static final String DEADLINE_DATE_NOT_NULL = "Assignment deadline date cannot be null";
+	        public static final String SUBJECT_ID_NOT_EMPTY = "Assignment subject ID cannot be empty";
+	        public static final String SUBJECT_ID_NOT_NULL = "Assignment subject ID cannot be null";
+	        public static final String SUBJECT_TEACHER_NOT_NULL = "Subject teacher can not be null";
+			public static final String SUBJECT_TEACHER_NOT_EMPTY= "Subject teacher can not be empty";
+			public static final String STUDENT_ID_NOT_NULL = "Student Id can not be null";
+			public static final String ASSIGNMENT_ID_NOT_NULL = "Assignment Id can not be null";
+			public static final String SUBMISSION_TEXT_ID_NOT_NULL = "Submission Text not null";
+			
+	    
+	    }
+	    
+	    public static class Admission {
+	        public static final String CLASS_LEVEL_NOT_NULL = "Class level cannot be null";
+	        public static final String CLASS_LEVEL_NOT_EMPTY = "Class level cannot be empty";
+	        public static final String ADMISSION_FEE_NOT_NULL = "Admission fee cannot be null";
+	        public static final String ADMISSION_FEE_POSITIVE = "Admission fee must be a positive value";
+	        public static final String TUITION_FEE_NOT_NULL = "Tuition fee cannot be null";
+	        public static final String TUITION_FEE_POSITIVE = "Tuition fee must be a positive value";
+	        public static final String LIBRARY_FEE_NOT_NULL = "Library fee cannot be null";
+	        public static final String LIBRARY_FEE_POSITIVE = "Library fee must be a positive value";
+	        public static final String LABORATORY_FEE_NOT_NULL = "Laboratory fee cannot be null";
+	        public static final String LABORATORY_FEE_POSITIVE = "Laboratory fee must be a positive value";
+	        public static final String SPORTS_FEE_NOT_NULL = "Sports fee cannot be null";
+	        public static final String SPORTS_FEE_POSITIVE = "Sports fee must be a positive value";
+	        public static final String FY_ID_NOT_NULL = "Fiscal year ID cannot be null";
+	        public static final String REGISTRATION_FEE_NOT_NULL = "Registration fee cannot be null";
+	        public static final String REGISTRATION_FEE_POSITIVE = "Registration fee must be a positive value";
+	        
+	    
+	    }
 }

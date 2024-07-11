@@ -1,6 +1,5 @@
 package com.management.school.security.service.impl;
 
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -11,31 +10,23 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.management.school.security.dto.ResultDto;
-import com.management.school.security.dto.SubjectResultDto;
 import com.management.school.security.dto.converter.ResultDtoConverter;
 import com.management.school.security.dto.request.result.CreateResultRequest;
 import com.management.school.security.dto.request.result.UpdateResultRequest;
-import com.management.school.security.dto.request.subjectresult.BaseSubjectResultRequest;
 import com.management.school.security.dto.request.subjectresult.CreateSubjectResultRequest;
 import com.management.school.security.exception.ClassroomNotFoundException;
 import com.management.school.security.exception.ResultNotFoundException;
 import com.management.school.security.exception.StudentNotFoundException;
-import com.management.school.security.exception.TeacherNotFoundException;
 import com.management.school.security.model.Classroom;
 import com.management.school.security.model.Result;
 import com.management.school.security.model.SubjectResult;
 import com.management.school.security.model.Student;
-import com.management.school.security.model.Subject;
-import com.management.school.security.model.Teacher;
 import com.management.school.security.repository.ClassroomRepository;
 import com.management.school.security.repository.ResultRepository;
 import com.management.school.security.repository.StudentRepository;
 import com.management.school.security.repository.SubjectRepository;
 import com.management.school.security.repository.TeacherRepository;
 import com.management.school.security.service.ResultService;
-import com.management.school.security.service.StudentService;
-import com.management.school.security.service.SubjectService;
-
 @Service
 public class ResultServiceImpl implements ResultService {
 

@@ -1,7 +1,6 @@
-package com.management.school.security.dto.request.classroom;
+package com.management.school.security.dto.request.assignment.assigning;
 
 import java.util.Objects;
-
 
 import com.management.school.security.helper.ValidationMessage;
 
@@ -9,18 +8,17 @@ import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
 
 @Data
 //@EqualsAndHashCode(callSuper = true)
 @AllArgsConstructor
-@NoArgsConstructor
-public class CreateClassroomRequest extends BaseClassroomRequest{
-
+@RequiredArgsConstructor
+public class CreateAssigningAssignmentRequest extends BaseAssigningAssignmetRequest {
 	
-	@NotNull(message = ValidationMessage.Classroom.CLASSROOM_NAME_NOT_NULL)
-    @NotEmpty(message = ValidationMessage.Classroom.CLASSROOM_NAME_NOT_EMPTY)
-    private String name;
+	@NotNull(message = ValidationMessage.Assignment.SUBJECT_TEACHER_NOT_NULL)
+    @NotEmpty(message = ValidationMessage.Assignment.SUBJECT_TEACHER_NOT_EMPTY)
+    private String teacherId;
 
 	@Override
 	public boolean equals(Object obj) {
@@ -30,15 +28,19 @@ public class CreateClassroomRequest extends BaseClassroomRequest{
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		CreateClassroomRequest other = (CreateClassroomRequest) obj;
-		return Objects.equals(name, other.name);
+		CreateAssigningAssignmentRequest other = (CreateAssigningAssignmentRequest) obj;
+		return Objects.equals(teacherId, other.teacherId);
 	}
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = super.hashCode();
-		result = prime * result + Objects.hash(name);
+		result = prime * result + Objects.hash(teacherId);
 		return result;
 	}
+	
+	
+	
+
 }

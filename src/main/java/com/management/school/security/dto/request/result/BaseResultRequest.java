@@ -2,7 +2,6 @@ package com.management.school.security.dto.request.result;
 
 import java.util.List;
 
-import com.management.school.security.dto.request.subjectresult.BaseSubjectResultRequest;
 import com.management.school.security.dto.request.subjectresult.CreateSubjectResultRequest;
 import com.management.school.security.helper.ValidationMessage;
 

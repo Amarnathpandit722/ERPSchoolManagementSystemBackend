@@ -1,7 +1,9 @@
 package com.management.school.security.model;
 
 import java.util.Date;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import org.hibernate.annotations.GenericGenerator;
 
@@ -36,5 +38,8 @@ public class Teacher {
 
 	    @OneToMany(mappedBy = "teacher", cascade = CascadeType.ALL)
 	    private List<Classroom> classroomList;
+	    
+	    @OneToMany(mappedBy = "teacher")
+	    private Set<Assignment> assignments = new HashSet<>();
 
 }

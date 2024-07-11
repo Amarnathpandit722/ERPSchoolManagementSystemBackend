@@ -1,7 +1,9 @@
 package com.management.school.security.model;
 
 import java.util.Date;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import org.hibernate.annotations.GenericGenerator;
 
@@ -46,5 +48,7 @@ public class Student {
 	    @ManyToOne(fetch = FetchType.LAZY)
 	    @JoinColumn(name = "classroom_id", referencedColumnName = "id")
 	    private Classroom classroom;
+	    @OneToMany(mappedBy = "student")
+	    private Set<AssignmentSubmission> assignmentSubmissions = new HashSet<>();
 
 }

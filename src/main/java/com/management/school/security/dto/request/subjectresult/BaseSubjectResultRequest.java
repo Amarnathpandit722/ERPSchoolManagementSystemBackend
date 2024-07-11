@@ -19,7 +19,7 @@ public class BaseSubjectResultRequest {
 	private String subjectId;
 
 	@NotNull(message = ValidationMessage.SubjectResult.GRADE_MUST_NOT_NULL)
-//	@NotEmpty(message = ValidationMessage.SubjectResult.GRADE_MUST_NOT_EMPTY)
+	@NotEmpty(message = ValidationMessage.SubjectResult.GRADE_MUST_NOT_EMPTY)
 	private double grade;
 	@NotNull(message = ValidationMessage.SubjectResult.REMARKS_MUST_NOT_NULL)
 	@NotEmpty(message = ValidationMessage.SubjectResult.REMARKS_MUST_NOT_EMPTY)

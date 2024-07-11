@@ -3,7 +3,6 @@ package com.management.school.security.config;
 import com.management.school.auditing.ApplicationAuditAware;
 import com.management.school.security.user.UserRepository;
 
-import jakarta.persistence.criteria.CriteriaBuilder;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
